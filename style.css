@@ -1,0 +1,40 @@
+:root {
+	--mainCol: #ffffff;
+	--boardCol: #0000ff;
+}
+
+body {
+	color: white;
+	background: var(--mainCol);
+	height: 100vh;
+}
+
+.game-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--boardCol);
+	margin: 0 auto;
+	gap: 10px;
+	width: fit-content;
+	padding: 20px;
+}
+
+.game-tile {
+	background: var(--mainCol);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.game-tile.selected {
+	background: gray;
+}
+
+.game-row {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
